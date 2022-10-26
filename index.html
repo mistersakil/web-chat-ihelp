@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Chat iHelpBD</title>
+    <!-- root style -->
+    <style>
+      :root {
+        --brandColor: rgba(15, 130, 130, 1);
+        --fontDark: rgba(0, 0, 0, 1);
+        --fontLight: rgba(255, 255, 255, 1);
+        --fontPrimary: rgba(220, 220, 220, 0.85);
+        --fontSecondary: rgba(200, 200, 200, 1);
+        --bgDark: rgba(0, 0, 0, 1);
+        --bgLight: rgba(255, 255, 255, 1);
+        --bgPrimary: rgba(20, 20, 20, 1);
+        --bgSecondary: rgba(50, 50, 50, 1);
+        --borderPrimary: rgba(150, 150, 150, 1);
+        --borderSecondary: rgba(100, 100, 100, 1);
+      }
+
+      .light {
+        --fontDark: rgba(255, 255, 255, 1);
+        --fontLight: rgba(0, 0, 0, 1);
+        --fontPrimary: rgba(20, 20, 20, 0.85);
+        --fontSecondary: rgba(50, 50, 50, 1);
+        --bgDark: rgba(255, 255, 255, 1);
+        --bgLight: rgba(0, 0, 0, 1);
+        --bgPrimary: rgba(220, 220, 220, 1);
+        --bgSecondary: rgba(200, 200, 200, 1);
+        --borderPrimary: rgba(150, 150, 150, 1);
+        --borderSecondary: rgba(100, 100, 100, 1);
+      }
+    </style>
+    <!-- font awesome cdn link   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css   -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/media_query.css" />
+    <!-- custom js   -->
+    <script src="./js/custom.js" defer></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header id="header">
+      <figure class="logo">
+        <img src="./img/logo.png" alt="logo" class="img" />
+      </figure>
+      <!-- /.col -->
+      <section class="profile">
+        <a class="circle" href="#" title="Logout">
+          <i class="fa-solid fa-right-from-bracket iconLogout"></i>
+        </a>
+        <figure class="circle">
+          <img src="./img/avatar.jpg" alt="logo" class="avatar" />
+        </figure>
+        <span class="name">Mister Kiron</span>
+      </section>
+      <!-- /.col.profile -->
+    </header>
+    <!-- /#header -->
+  </body>
+</html>
