@@ -22,7 +22,7 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bgPrimary);
-  color: var(--fontDark);
+  color: var(--fontSecondary);
   position: relative;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 #header .profile .circle .iconLogout,
 #header .profile .name {
-  color: var(--fontDark);
+  color: var(--fontSecondary);
   font-size: 2rem;
 }
 #header .profile .circle .avatar {
