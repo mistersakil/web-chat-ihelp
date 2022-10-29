@@ -119,7 +119,7 @@ body {
 #contentArea .chatListCol .chatListBox {
   display: flex;
   flex-direction: column;
-  outline: 1px solid var(--borderPrimary);
+  outline: 1px solid var(--bgPrimary);
   height: 45%;
   padding: 1rem;
   width: 100%;
@@ -169,7 +169,7 @@ body {
   height: 4rem;
   border-radius: 50%;
   padding: 0.2rem;
-  border: 0.1rem solid var(--borderPrimary);
+  border: 0.1rem solid var(--bgPrimary);
   background-color: var(--bgPrimary);
   font-size: 2rem;
   text-align: center;
@@ -184,11 +184,15 @@ body {
   /* background-color: red; */
   flex-basis: 45%;
   height: 100%;
-  border: 1px solid var(--borderPrimary);
+  border: 1px solid var(--bgPrimary);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
+}
+#contentArea .chatHistoryCol .row {
+  flex-basis: 10%;
+  flex-grow: 1;
 }
 #contentArea .chatHistoryCol .profile {
   display: flex;
@@ -197,20 +201,64 @@ body {
   gap: 1rem;
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 1px solid var(--borderPrimary);
+  border-bottom: 1px solid var(--bgPrimary);
   width: 100%;
   padding: 1rem;
+  background-image: linear-gradient(
+    to top,
+    var(--bgPrimary),
+    var(--bgSecondary)
+  );
 }
 #contentArea .chatHistoryCol .profile .icon {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  padding: 0.5rem;
-  background-color: var(--bgSecondary);
+  padding: 0.3rem;
+  border: 0.1rem solid var(--borderSecondary);
+}
+#contentArea .chatHistoryCol .conversation {
+  /* background-color: red; */
+  flex-basis: 80%;
+  width: 100%;
 }
 
+#contentArea .chatHistoryCol .editor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--bgPrimary);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(
+    to top,
+    var(--bgPrimary),
+    var(--bgSecondary)
+  );
+  position: relative;
+}
+#contentArea .chatHistoryCol .editor .messageBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  text-indent: 1rem;
+  font-size: 1.6rem;
+  padding-right: 10rem;
+}
+#contentArea .chatHistoryCol .editor .btnSubmit {
+  position: absolute;
+  right: 0rem;
+  background-color: var(--bgPrimary);
+  font-size: 2rem;
+  width: 10rem;
+  height: 100%;
+  cursor: pointer;
+}
+/* profileDetailsCol style  */
 #contentArea .profileDetailsCol {
   flex-basis: 20%;
-
   height: 100%;
 }
