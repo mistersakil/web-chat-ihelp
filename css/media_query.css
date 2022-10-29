@@ -5,10 +5,24 @@
 /* Small device media query */
 
 @media (max-width: 767px) {
+  /* profileDetailsCol style  */
+  #contentArea .profileDetailsCol {
+    flex-basis: 0%;
+    height: 100%;
+    padding: 0;
+    display: none;
+  }
 }
 /* Extra small (450px) device media query */
 @media (max-width: 450px) {
   #header .profile .name {
     display: none;
+  }
+  /* chatListCol style  */
+  #contentArea .chatListCol {
+    flex-basis: 0%;
+    display: none;
+    padding: 0rem;
+    gap: 0rem;
   }
 }

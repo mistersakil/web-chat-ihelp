@@ -23,6 +23,7 @@ html {
 body {
   font-size: 1.6rem;
   position: relative;
+  background-color: var(--bgLight);
 }
 
 /* Header Styles  */
@@ -64,6 +65,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #header .profile .circle .iconLogout,
 #header .profile .name {
@@ -218,9 +220,54 @@ body {
   border: 0.1rem solid var(--borderSecondary);
 }
 #contentArea .chatHistoryCol .conversation {
-  /* background-color: red; */
   flex-basis: 80%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox {
+  margin-bottom: 1rem;
+}
+
+#contentArea .chatHistoryCol .conversation .currentMessageBox .header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox .header .name {
+  background-color: var(--bgSecondary);
+  color: var(--fontDark);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  min-width: 25%;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox .dateTime {
+  font-size: 1.2rem;
+  font-style: italic;
+  padding-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox.right {
+  text-align: right;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox.right {
+  justify-content: flex-end;
+}
+#contentArea .chatHistoryCol .conversation .currentMessageBox.right .header {
+  flex-direction: row-reverse;
+}
+#contentArea
+  .chatHistoryCol
+  .conversation
+  .currentMessageBox.right
+  .header
+  .name {
+  background-color: var(--bgSecondary);
+  color: var(--fontDark);
 }
 
 #contentArea .chatHistoryCol .editor {
@@ -256,16 +303,15 @@ body {
   width: 10rem;
   height: 100%;
   cursor: pointer;
+  color: var(--brandColor);
 }
 /* profileDetailsCol style  */
 #contentArea .profileDetailsCol {
   flex-basis: 20%;
   height: 100%;
-  /* background-color: red; */
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 #contentArea .profileDetailsCol .profile {
   display: flex;
@@ -291,7 +337,7 @@ body {
   gap: 1rem;
 }
 #contentArea .profileDetailsCol .profile .attributes li {
-  background-color: var(--bgPrimary);
+  border: 2px solid var(--bgPrimary);
   color: var(--fontDark);
   height: 3rem;
   width: 100%;
