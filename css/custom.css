@@ -96,13 +96,12 @@ body {
 }
 /* chatListCol style  */
 #contentArea .chatListCol {
-  flex-basis: 25%;
-  /* background-color: blue; */
+  flex-basis: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem;
   gap: 1rem;
 }
 
@@ -133,7 +132,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* gap: 1rem; */
   padding: 0 2rem 0 1rem;
 
   border-radius: 0.5rem;
@@ -183,14 +181,36 @@ body {
 }
 /* chatHistoryCol style  */
 #contentArea .chatHistoryCol {
+  /* background-color: red; */
   flex-basis: 45%;
-  background-color: blue;
   height: 100%;
-  box-shadow: 0px 0px 1px 5px var(--borderPrimary);
+  border: 1px solid var(--borderPrimary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#contentArea .chatHistoryCol .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--borderPrimary);
+  width: 100%;
+  padding: 1rem;
+}
+#contentArea .chatHistoryCol .profile .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: var(--bgSecondary);
 }
 
 #contentArea .profileDetailsCol {
   flex-basis: 20%;
-  /* background-color: blue; */
+
   height: 100%;
 }
